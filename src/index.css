@@ -12,6 +12,38 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.nav {
+  display: flex;
+  flex-flow: row nowrap;
+  padding-left: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid black;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+}
+.nav a {
+  padding-left: 1em;
+}
+.nav .settings img:hover {
+  cursor: pointer;
+}
+section { 
+  padding-top: 3em;
+}
+
+.nav .settings {
+  float: right;
+}
+.nav .settings img {
+  width: 2em;
+  height: 2em;
+  float: right;
+  position: fixed;
+  right: 1em;
+  top: 0.5em;
+}
 .profile-preview {
   display: flex;
   flex-flow: row wrap;

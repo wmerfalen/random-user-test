@@ -75,59 +75,61 @@ function Home() {
           <Link to="/members">Members</Link>
         </div>
       </div>
-      <div className="error">{error}</div>
-      <div className="profile">
-        <div>
-          {loading && (
-            <div className="loading-screen">
-              <img src={loading_gif} />
-            </div>
-          )}
-          {!loading && (
-            <>
-              <div className="profile-image-wrapper">
-                {error === null && (
-                  <>
-                    <img src={profile_image} />
-                  </>
-                )}
-                {error !== null && "???"}
+      <section>
+        <div className="error">{error}</div>
+        <div className="profile">
+          <div>
+            {loading && (
+              <div className="loading-screen">
+                <img src={loading_gif} />
               </div>
-              <div className="attributes">
-                <ul>
-                  <li>
-                    <b>First:</b> {first_name}
-                  </li>
-                  <li>
-                    <b>Last:</b> {last_name}
-                  </li>
-                  <li>
-                    <b>Street:</b> {street}
-                  </li>
-                  <li>
-                    <b>City:</b> {city}
-                  </li>
-                  <li>
-                    <b>State:</b> {state}
-                  </li>
-                  <li>
-                    <b>Postal code:</b> {postal_code}
-                  </li>
-                  <li>
-                    <b>Email:</b> {email}
-                  </li>
-                  <li>
-                    <b>Date of birth:</b> {date_of_birth}
-                  </li>
-                  <li>
-                    <b>Phone:</b> {phone}
-                  </li>
-                </ul>
-              </div>
-            </>
-          )}
+            )}
+            {!loading && (
+              <>
+                <div className="profile-image-wrapper">
+                  {error === null && (
+                    <>
+                      <img src={profile_image} />
+                    </>
+                  )}
+                  {error !== null && "???"}
+                </div>
+                <div className="attributes">
+                  <ul>
+                    <li>
+                      <b>First:</b> {first_name}
+                    </li>
+                    <li>
+                      <b>Last:</b> {last_name}
+                    </li>
+                    <li>
+                      <b>Street:</b> {street}
+                    </li>
+                    <li>
+                      <b>City:</b> {city}
+                    </li>
+                    <li>
+                      <b>State:</b> {state}
+                    </li>
+                    <li>
+                      <b>Postal code:</b> {postal_code}
+                    </li>
+                    <li>
+                      <b>Email:</b> {email}
+                    </li>
+                    <li>
+                      <b>Date of birth:</b> {date_of_birth}
+                    </li>
+                    <li>
+                      <b>Phone:</b> {phone}
+                    </li>
+                  </ul>
+                </div>
+              </>
+            )}
+          </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 }

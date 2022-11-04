@@ -1,5 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import { useParams, Link } from "react-router-dom";
+import settings from "../images/settings.png";
 
 function profile_link(user) {
   return `/profile/${user.login.username}`;
@@ -44,6 +45,7 @@ function Members() {
         (error) => {
           console.error({ error });
           setError(`An error occurred: ${error}`);
+          setMembers([]);
         }
       );
   }, []);
@@ -52,6 +54,9 @@ function Members() {
     <div>
       <div className="nav">
         <Link to="/">Home</Link>
+        <div className="settings">
+          <img src={settings} />
+        </div>
       </div>
       <section>
         <div className="error">{error}</div>
