@@ -5,9 +5,78 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: white;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.profile-preview {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 1em;
+  min-width: 20em;
+  width: 20em;
+  font-family: courier-new;
+  border: 1px solid black;
+}
+
+.profile-preview:hover {
+  cursor: pointer;
+  background-color: #D9F7BC;
+}
+
+.profile-name-wrapper {
+  padding-top: 1em;
+  padding-left: 0.5em;
+}
+
+.members-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.profile-thumbnail {
+  border-radius: 125px;
+  width: 4em;
+  height: 4em;
+}
+.profile-thumb-wrapper {
+
+}
+
+.profile-page  .profile ul {
+  list-style: none;
+  font-family: courier-new;
+}
+
+.profile-page .profile {
+  border: 1px solid black;
+  display: flex;
+}
+.profile-page .error {
+  color: red;
+  font-size: 2em;
+  text-align: center;
+}
+
+.profile-page .loading-screen {
+}
+.profile-page .loading-screen img {
+  width: 10em;
+  height: 10em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.profile-page .profile .attributes {
+  float: left;
+}
+
+.profile-page .profile .profile-image-wrapper {
+  float: left;
+  padding-left: 2em;
+  padding-top: 1em;
 }
