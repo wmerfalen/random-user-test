@@ -11,7 +11,7 @@ export default function App() {
       <Routes>
         <Route path="/members" element={<Members />} />
         <Route path="/profile/:memberId" element={<Profile />} />
-        <Route path="*" element={<Home />} />
+        <Route path="*" element={<Members />} />
       </Routes>
     </BrowserRouter>
   );

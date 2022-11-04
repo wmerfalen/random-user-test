@@ -3,7 +3,22 @@ import { useParams, Link } from "react-router-dom";
 import loading_gif from "../images/loading.gif";
 
 function format_dob(dob) {
-  return dob; // TODO FIXME
+  const d = new Date(dob);
+  const monthNames = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+  return `${monthNames[d.getMonth()]} ${d.getDay()}, ${d.getFullYear()}`;
 }
 function Home() {
   const [first_name, setFirstName] = useState("?");
