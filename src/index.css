@@ -44,6 +44,10 @@ section {
   right: 1em;
   top: 0.5em;
 }
+
+.nav .search {
+  padding-left: 1em;
+}
 .profile-preview {
   display: flex;
   flex-flow: row wrap;
